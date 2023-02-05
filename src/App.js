@@ -1,0 +1,8 @@
+import './App.scss';
+import Quote from './components/Quote';
+
+function App() {
+  return <Quote />
+}
+
+export default App;
