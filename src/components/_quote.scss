@@ -1,6 +1,4 @@
 @use '../abstract' as a;
-// @import '../images/icon-dice.svg';
-
 
 body {
     background-color:a.$darkBlue;
@@ -39,25 +37,5 @@ body {
         font-weight: bold;
         line-height: 1.2;
         font-size: 1.5rem;
-    }
-
-    .quote-button {
-        
-        background-image: url('../images/icon-dice.svg');
-        background-size: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-
-        position: relative;
-        bottom: -1.5rem;
-
-        width: 3rem;
-        height: 3rem;
-        padding: .5rem;
-        border: none;
-        outline: 0;
-        cursor: pointer;
-        border-radius: 100vmax;
-        background-color: a.$neonGreen;
     }
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button';
 import {useEffect, useState} from 'react';
 import './_quote.scss';
 
@@ -26,10 +27,8 @@ const Quote = () => {
   return (
     <div className='quote-container'>
       <p className='quote-author'>{quote.author}</p>
-      <div>
-        <h1 className='quote-phrase'>"{quote.quote}"</h1>
-      </div>
-      <button className='quote-button' onClick={ () => loadQuote() }></button>
+      <h1 className='quote-phrase'>"{quote.quote}"</h1>
+      <Button loadQuote = { () => loadQuote() } />
     </div>
   );
 };
