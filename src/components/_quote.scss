@@ -1,5 +1,63 @@
 @use '../abstract' as a;
+// @import '../images/icon-dice.svg';
+
 
 body {
-    background-color:a.$darkGrayishBlue;
+    background-color:a.$darkBlue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    margin-inline: 1rem;
+}
+
+.quote-container {
+    background-color: a.$darkGrayishBlue;
+    padding-inline: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .quote-author {
+        color: a.$neonGreen;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: .75rem;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .quote-phrase {
+        color: a.$lightCyan;
+        text-align: center;
+        font-weight: bold;
+        line-height: 1.2;
+        font-size: 1.5rem;
+    }
+
+    .quote-button {
+        
+        background-image: url('../images/icon-dice.svg');
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        position: relative;
+        bottom: -1.5rem;
+
+        width: 3rem;
+        height: 3rem;
+        padding: .5rem;
+        border: none;
+        outline: 0;
+        cursor: pointer;
+        border-radius: 100vmax;
+        background-color: a.$neonGreen;
+    }
 }

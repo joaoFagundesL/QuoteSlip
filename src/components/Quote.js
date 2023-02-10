@@ -2,6 +2,7 @@ import React from 'react'
 import {useEffect, useState} from 'react';
 import './_quote.scss';
 
+
 const Quote = () => {
   const [quote, setQuote] = useState({ content: '', author: ''});
 
@@ -22,11 +23,13 @@ const Quote = () => {
     loadQuote();
   }, [])
 
-  return(
+  return (
     <div className='quote-container'>
       <p className='quote-author'>{quote.author}</p>
-      <h1 className='quote-phrase'>{quote.quote}</h1>
-      <button className='quote-button' onClick={ () => loadQuote() }>Click</button>
+      <div>
+        <h1 className='quote-phrase'>"{quote.quote}"</h1>
+      </div>
+      <button className='quote-button' onClick={ () => loadQuote() }></button>
     </div>
   );
 };
